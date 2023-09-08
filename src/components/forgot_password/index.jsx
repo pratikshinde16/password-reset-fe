@@ -11,7 +11,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       // const url = `http://localhost:8080/api/password-reset`;
-	  const url = `https://password-reset-gtx1.onrender.com/api/password-reset`
+	    const url = `https://password-reset-gtx1.onrender.com/api/password-reset`
       const { data:res } = await axios.post(url, { email});
       setMsg(res.message);
 	  console.log(res.message)
